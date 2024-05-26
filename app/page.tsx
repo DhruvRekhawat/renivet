@@ -1,16 +1,16 @@
 import Image from "next/image";
-import Image1 from'@/assests/greenforest.jpg'
-import Image2 from'@/assests/clothes.jpg'
-import Image3 from'@/assests/yellowapple.jpg'
-import Image4 from'@/assests/jasmin-chew-JeKQiy307rA-unsplash.jpg'
-import Image5 from'@/assests/whitewalk.jpg'
-import Image6 from'@/assests/whiterose.jpg'
-import Icon1 from '@/assests/icons/carbon-footprint.png'
-import Icon2 from '@/assests/icons/eco-friendly-fabric.png'
-import Icon3 from '@/assests/icons/ethical.png'
-import FB from '@/assests/icons/facebook.png'
-import IG from '@/assests/icons/instagram.png'
-import X from '@/assests/icons/twitter.png'
+import Image1 from"@/assests/greenforest.jpg"
+import Image2 from"@/assests/clothes.jpg"
+import Image3 from"@/assests/yellowapple.jpg"
+import Image4 from"@/assests/jasmin-chew-JeKQiy307rA-unsplash.jpg"
+import Image5 from"@/assests/whitewalk.jpg"
+import Image6 from"@/assests/whiterose.jpg"
+import Icon1 from "@/assests/icons/carbon-footprint.png"
+import Icon2 from "@/assests/icons/eco-friendly-fabric.png"
+import Icon3 from "@/assests/icons/ethical.png"
+import FB from "@/assests/icons/facebook.png"
+import IG from "@/assests/icons/instagram.png"
+import X from  "@/assests/icons/twitter.png"
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
 import Navbar from "@/components/molecules/navbar";
 import { Button } from "@/components/ui/button";
@@ -47,18 +47,18 @@ export default function Home() {
       </section>
         <section className="my-8 bg-brand-brown p-8 ">
           <h1 className="text-4xl text-brand-offwhite text-center my-2">Join The Community</h1>
-          <h2 className="text-5xl text-brand-orangewhite my-4">Fashion has the power to drive positive change. By subscribing, you're taking the first step towards a more sustainable future for our planet and the apparel industry.</h2>
+          <h2 className="text-5xl text-brand-orangewhite my-4">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry.</h2>
           <Button className="bg-brand-orangewhite text-brand-brown hover:bg-brand-offwhite w-full"> Subscribe Now</Button>
         </section>
         <section className="my-8 bg-clothesrack p-8 ">
           <h1 className="text-4xl text-brand-offwhite text-center my-2">Join The Community</h1>
-          <h2 className="text-5xl text-brand-orangewhite my-4">Fashion has the power to drive positive change. By subscribing, you're taking the first step towards a more sustainable future for our planet and the apparel industry.</h2>
+          <h2 className="text-5xl text-brand-orangewhite my-4">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry.</h2>
           <Button className="bg-brand-orangewhite text-brand-brown hover:bg-brand-offwhite w-full"> Subscribe Now</Button>
         </section>
         <section className="my-8 grid grid-cols-1 md:grid-cols-2">
           <div className="bg-brand-brown p-6">
           <h1 className="text-4xl text-brand-offwhite text-center my-2">Join The Community</h1>
-          <h2 className="text-2xl text-brand-orangewhite my-4">Fashion has the power to drive positive change. By subscribing, you're taking the first step towards a more sustainable future for our planet and the apparel industry.</h2>
+          <h2 className="text-2xl text-brand-orangewhite my-4">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry.</h2>
           <Button className="bg-brand-orangewhite text-brand-brown hover:bg-brand-offwhite w-full"> Subscribe Now</Button>
           </div>
           <Image src={Image2} alt="clothes"></Image>
