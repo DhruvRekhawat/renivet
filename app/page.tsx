@@ -82,7 +82,7 @@ export default function Home() {
     }}
     className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center">
           <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-6xl text-white font-bold p-4">Join the community</motion.h1>
-          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md font-bold text-center text-wrap md:w-2/3 mx-auto">Fashion has the power to drive positive change. By subscribing, you're taking the first step towards a more sustainable future for our planet and the apparel industry</motion.p>
+          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md font-bold text-center text-wrap md:w-2/3 mx-auto">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry</motion.p>
           <Card className="text-white my-6 p-6 h-full md:w-1/2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border-transparent  ">
             <CardTitle className="text-md my-2">Subscribe To Our Newsletter</CardTitle>
             <Subscribe></Subscribe>
