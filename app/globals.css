@@ -1,9 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
   @layer base {
+    @font-face {
+      font-family: 'Allura';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+    }
     :root {
       --brand-darkgreen: 60 7% 35%;
       --brand-lightgreen: 74 22% 62%;
@@ -105,7 +110,7 @@
     background-position: left;
   }
   .bg-clouds{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assests/clouds.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../assests/clouds.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -118,3 +123,4 @@
     background-size: cover;
     background-position: left;
   }
+

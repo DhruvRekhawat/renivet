@@ -1,5 +1,5 @@
 "use client"
-
+import { Allura} from "next/font/google";
 import Image from "next/image";
 import Image1 from"@/assests/greenforest.jpg"
 import Image2 from"@/assests/clothes.jpg"
@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import Subscribe from "@/components/molecules/subscribeform";
 import { motion } from "framer-motion"
 
+const allura = Allura({subsets:["latin"],weight:["400"]})
 
 export default function Home() {
 
@@ -53,8 +54,8 @@ export default function Home() {
 
       <section className="flex flex-col space-y-4">
         <h1 className="text-center text-4xl  mt-16">What to Expect</h1>
-        <p className=" text-center mx-auto w-2/3 ">Renivet&apos;s mission is to empower brands and shoppers who care about reducing fashion&apos;s environmental impact. We carefully vet every brand partner for robust sustainability practices, so you can discover and shop environmentally-conscious fashion with confidence.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 place-items-center gap-4">
+        <p className=" text-center mx-auto md:w-2/3 px-2 ">Renivet&apos;s mission is to empower brands and shoppers who care about reducing fashion&apos;s environmental impact. We carefully vet every brand partner for robust sustainability practices, so you can discover and shop environmentally-conscious fashion with confidence.</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 place-items-center gap-4 my-6">
           <Card className="">
             <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon2} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">Eco-Friendly Materials</CardTitle>
             <CardContent className="">Brands using organic, recycled and innovative plant-based fabrics to create sustainable products</CardContent></CardHeader>
@@ -81,8 +82,8 @@ export default function Home() {
       },
     }}
     className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center">
-          <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-6xl text-white font-bold p-4">Join the community</motion.h1>
-          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md font-bold text-center text-wrap md:w-2/3 mx-auto">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry</motion.p>
+          <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-2xl text-white font-bold p-4">Join the <div className="md:text-8xl text-4xl md:-translate-y-8"><span className={allura.className}>Community</span></div></motion.h1>
+          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md  text-center text-wrap md:w-2/3 mx-auto">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry</motion.p>
           <Card className="text-white my-6 p-6 h-full md:w-1/2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border-transparent  ">
             <CardTitle className="text-md my-2">Subscribe To Our Newsletter</CardTitle>
             <Subscribe></Subscribe>
@@ -129,8 +130,3 @@ export default function Home() {
   );
 }
 
-{/* <Image src={Image1} height={1000} alt="sustainable fashion"></Image>
-
-<Image src={Image4} height={1000} alt="sustainable fashion"></Image>
-<Image src={Image5} height={1000} alt="sustainable fashion"></Image>
-<Image src={Image6} height={1000} alt="sustainable fashion"></Image> */}
