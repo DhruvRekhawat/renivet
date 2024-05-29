@@ -50,9 +50,9 @@ export default function Subscribe() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              
               <FormControl>
-                <Input placeholder="What's your name?" {...field} />
+                <Input placeholder="What's your name?" {...field} className=" ring-transparent " />
               </FormControl>
               
               <FormMessage />
@@ -64,7 +64,7 @@ export default function Subscribe() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              
               <FormControl>
                 <Input placeholder="Enter Your Email to Join Our Newsletter!" {...field} />
               </FormControl>
@@ -73,7 +73,7 @@ export default function Subscribe() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="bg-brand-brown text-brand-offwhite hover:bg-brand-orange w-full">Submit</Button>
+        <Button type="submit" className="bg-black text-brand-offwhite w-full">Submit</Button>
       </form>
     </Form>
   )

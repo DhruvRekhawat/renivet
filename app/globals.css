@@ -91,7 +91,7 @@
   }
 
   .bg-clothes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assests/greenforest.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../assests/rafael-alcure-Fzip3zb-h9k-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -99,6 +99,20 @@
   }
   .bg-clothesrack{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assests/clothes.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: left;
+  }
+  .bg-clouds{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assests/clouds.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: left;
+  }
+  .bg-treegirl{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assests/alex-muromtsev-3YvFGeUnKYw-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
