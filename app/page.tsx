@@ -45,7 +45,7 @@ export default function Home() {
       },
     }}
     className="flex flex-col items-center justify-start">  
-    <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-2xl md:text-4xl md:w-2/3 text-brand-offwhite px-2 md:px-8 text-center font-bold">Welcome to Revinet,<br /><span className="text-white">where sustainable fashion meets transparency and empowerment</span></motion.h1>
+    <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-2xl md:text-4xl md:w-2/3 text-brand-offwhite px-2 md:px-8 text-center font-bold">Welcome to Renivet,<br /><span className="text-white">where sustainable fashion meets transparency and empowerment</span></motion.h1>
     <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-brand-offwhite text-md px-2 md:px-8 py-4 text-center">Launching Soon: A Marketplace Like No Other</motion.p>
     <Button className="bg-black text-white hover:text-brand-offwhite mb-16"> Subscribe for updates</Button>
 
@@ -81,7 +81,7 @@ export default function Home() {
         },
       },
     }}
-    className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center">
+    className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center my-8">
           <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-2xl text-white font-bold p-4">Join the <div className="md:text-8xl text-4xl md:-translate-y-8"><span className={allura.className}>Community</span></div></motion.h1>
           <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md  text-center text-wrap md:w-2/3 mx-auto">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry</motion.p>
           <Card className="text-white my-6 p-6 h-full md:w-1/2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border-transparent  ">
