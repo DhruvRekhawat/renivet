@@ -18,6 +18,8 @@ import Navbar from "@/components/molecules/navbar";
 import { Button } from "@/components/ui/button";
 import Subscribe from "@/components/molecules/subscribeform";
 import { motion } from "framer-motion"
+import BlogCarousel from "@/components/molecules/blogCarousel";
+import Link from "next/link";
 
 const allura = Allura({subsets:["latin"],weight:["400"]})
 
@@ -68,7 +70,11 @@ export default function Home() {
           </Card>
         </div>
       </section>
-
+        <section className="flex flex-col space-y-4 w-full md:p-8 p-2">
+          <h1 className="text-start text-4xl  mt-16">Latest Stories</h1>
+          <h3><Link href="/blogs"><u>View all</u></Link></h3>
+          <BlogCarousel></BlogCarousel>
+        </section>
         <motion.section 
         initial="hidden"
     animate="show"
