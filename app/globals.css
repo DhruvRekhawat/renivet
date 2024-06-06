@@ -96,7 +96,7 @@
   }
 
   .bg-clothes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../assests/rafael-alcure-Fzip3zb-h9k-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../assests/rafael-alcure-Fzip3zb-h9k-unsplash.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -110,7 +110,7 @@
     background-position: left;
   }
   .bg-clouds{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../assests/clouds.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../assests/clouds.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

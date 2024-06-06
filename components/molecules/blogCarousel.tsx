@@ -1,5 +1,3 @@
-"use client"
-
 import {
     Carousel,
     CarouselContent,
@@ -10,6 +8,7 @@ import {
 import { Card, CardContent } from "../ui/card"
 import {client,urlFor} from '@/sanity/lib/client'  
 import Image from "next/image"
+import Link from "next/link";
 interface Post {
     title: string;
     description: string;
@@ -52,21 +51,29 @@ const BlogCarousel = async() => {
  const blogData:Post[] = await getData();
  console.log(blogData)
   return (
+
         <Carousel
           opts={{
             align: "center",
           }}
-          className="w-[80%] mx-8 md:translate-x-52 "
+          className=" flex justify-start items-center"
         >
           <CarouselContent className="">
             {blogData.map((blog, index) => (
-              <CarouselItem key={index} className="md:basis-1/3">
-                <div className="p-1">
-                  <Card className="rounded-md">
-                    <CardContent className="flex flex-col">
-                    <Image src={urlFor(blog.mainImage).url()} width={500} height={200} alt='main image' className=""></Image>
-                      <span className="text-lg font-semibold">{blog.title}</span>
+              <CarouselItem key={index} className="md:basis-1/3 w-2/3">
+                <div className="p-4 flex flex-wrap">
+                  <Card className="rounded-md w-[460px] bg-zinc-100 ">
+
+                      <div className="h-[250px] w-full p-1">
+                    <img src={urlFor(blog.mainImage).url()} alt='main image' className=" h-full w-full rounded-sm"></img>
+                    </div>
+                    <CardContent className="px-4 flex flex-col justify-between gap-2">
+                    <span className="text-lg">{blog.title}</span>
+                    <span className="font-semibold text-xs">Test Author</span>
+                    <Link href={`/blog/${blog.slug.current}`} ><button className="bg-white hover:bg-zinc-900 hover:text-white transition-all rounded-lg text-xs border-none p-2 w-fit">{blog.time} read </button></Link>
                     </CardContent>
+                      
+
                   </Card>
                 </div>
               </CarouselItem>
