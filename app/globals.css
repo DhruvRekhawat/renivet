@@ -95,6 +95,9 @@
     }
   }
 
+  html{
+    scroll-behavior: smooth;
+  }
   .bg-clothes{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../assests/rafael-alcure-Fzip3zb-h9k-unsplash.webp');
     background-repeat: no-repeat;

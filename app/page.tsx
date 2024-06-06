@@ -49,12 +49,12 @@ export default function Home() {
     className="flex flex-col items-center justify-start">  
     <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-2xl md:text-4xl md:w-2/3 text-brand-offwhite px-2 md:px-8 text-center font-bold">Welcome to Renivet,<br /><span className="text-white">where sustainable fashion meets transparency and empowerment</span></motion.h1>
     <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-brand-offwhite text-md px-2 md:px-8 py-4 text-center">Launching Soon: A Marketplace Like No Other</motion.p>
-    <Button className="bg-black text-white hover:text-brand-offwhite mb-16"> Subscribe for updates</Button>
+    <Link href='#subscribe'><Button className="bg-black text-white hover:text-brand-offwhite mb-16"> Subscribe for updates</Button></Link>
 
     </motion.div> 
       </section>
 
-      <section className="flex flex-col space-y-4">
+      <section className="flex flex-col space-y-4" id="howitworks">
         <h1 className="text-center text-4xl  mt-16">What to Expect</h1>
         <p className=" text-center mx-auto md:w-2/3 px-2 ">Renivet&apos;s mission is to empower brands and shoppers who care about reducing fashion&apos;s environmental impact. We carefully vet every brand partner for robust sustainability practices, so you can discover and shop environmentally-conscious fashion with confidence.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 place-items-center gap-4 my-6">
@@ -87,7 +87,7 @@ export default function Home() {
         },
       },
     }}
-    className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center my-8">
+    className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center my-8" id="subscribe">
           <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-2xl text-white font-bold p-4">Join the <div className="md:text-8xl text-4xl md:-translate-y-8"><span className={allura.className}>Community</span></div></motion.h1>
           <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md  text-center text-wrap md:w-2/3 mx-auto">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry</motion.p>
           <Card className="text-white my-6 p-6 h-full md:w-1/2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border-transparent  ">
@@ -97,7 +97,7 @@ export default function Home() {
         </motion.section>
         
 
-        <section className="my-8">
+        <section className="my-8" id="contact">
           <h1 className="text-4xl  text-center my-2">Contact Us</h1>
           <p className="text-brand-orange text-center mx-auto my-2">Have questions? We&apos;d love to hear from you. Reach out!</p>
           

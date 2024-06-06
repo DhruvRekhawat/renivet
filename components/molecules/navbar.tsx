@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Logo from '@/assests/icons/PrimaryLogo.svg'
 import { Heart } from "lucide-react"
+import Link from "next/link"
 const Navbar = () => {
   return (
     <>
@@ -9,10 +10,9 @@ const Navbar = () => {
       
         <Image src={Logo} alt="logo" height={80}></Image>
         <ul className="flex gap-4 text-md font-bold hover:cursor-pointer font-sans">
-            <li>About</li>
-            <li>How it Works</li>
-            <li>Subscribe</li>
-            <li>Contact</li>
+            <Link href='#howitworks'><li>How it Works</li></Link>
+            <Link href='#subscribe'><li>Subscribe</li></Link>
+            <Link href='#contact'><li>Contact</li></Link>
         </ul>
 
     </nav>
