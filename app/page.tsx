@@ -1,7 +1,7 @@
 "use client"
 import { Allura} from "next/font/google";
 import Image from "next/image";
-import Image1 from"@/assests/greenforest.jpg"
+import Image1 from"@/assests/karina.webp"
 import Image2 from"@/assests/clothes.jpg"
 import Image3 from"@/assests/yellowapple.jpg"
 import Image4 from"@/assests/jasmin-chew-JeKQiy307rA-unsplash.jpg"
@@ -33,7 +33,12 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center">
         
     <Navbar></Navbar>
-    <section className="grid grid-cols-1 w-full place-items-center bg-zinc-950 bg-clothes pt-48 md:h-screen"> 
+    <section className="grid grid-cols-1  h-[75vh] md:h-screen w-full place-items-center bg-transparent"> 
+      <div className="h-full w-full -z-10 absolute md:top-20 top-0">
+      <Image src={Image1} layout="fill"
+      objectFit="cover"        
+    quality={100} alt="coverImage" className="brightness-75"></Image>
+    </div>
     <motion.div
     initial="hidden"
     animate="show"
@@ -49,8 +54,7 @@ export default function Home() {
     className="flex flex-col items-center justify-start">  
     <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-2xl md:text-4xl md:w-2/3 text-white px-2 md:px-8 text-center font-bold">RENIVET<br /><span className="text-white">SEE THE DIFFERENCE : MAKE THE DIFFERENCE</span></motion.h1>
     <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-brand-offwhite text-md px-2 md:px-8 py-4 text-center">We are revolutionizing the way you shop for Fashion & Accessories </motion.p>
-    <Link href='#subscribe'><Button className="bg-black text-white hover:text-brand-offwhite mb-16"> Step up and Subscribe</Button></Link>
-
+    <Link href='#subscribe'><Button className="bg-black text-white hover:text-brand-offwhite"> Step up and Subscribe</Button></Link>
     </motion.div> 
       </section>
 
@@ -105,9 +109,9 @@ export default function Home() {
         <section className="my-8" id="contact">
           <h1 className="text-4xl  text-center my-2">Contact Us</h1>
           <p className="text-center mx-auto my-2 w-2/3">Whether you&apos;re a conscious consumer with questions about our products or a brand interested in collaborating on sustainable fashion, we&apos;d love to connect. Your feedback, ideas, and inquiries are invaluable to us, and we&apos;re committed to fostering meaningful relationships. Contact us today and let&apos;s start a conversation. Together, we can create a more sustainable future for fashion.</p>
-          <div className="w-full flex flex-wrap">
-            <Card>Concious Consumer</Card>
-            <Card>Brand Collaboration</Card>
+          <div className="w-full flex flex-wrap justify-center gap-6 items-center">
+            <Button>Concious Consumer</Button>
+            <Button>Brand Collaboration</Button>
           </div>
         </section>
         <footer className="bg-black w-full px-8 py-4 flex flex-col md:flex-row justify-center items-center text-white">
