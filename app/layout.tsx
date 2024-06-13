@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={merriweather.className}>
       <Navbar></Navbar>
       {children}
-      <footer className="bg-gray-600 w-full px-8 py-4 flex flex-col md:flex-row justify-center items-center text-white">
+      <footer className="bg-brand-darkgreen w-full px-8 py-4 flex flex-col md:flex-row justify-center items-center text-white">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
             <ul className="text-brand-offwhite">
               <h1 className="text-lg text-brand-orangewhite">Important Links</h1>
@@ -48,7 +48,7 @@ export default function RootLayout({
             <ul className="text-brand-offwhite">
               <h1 className="text-lg text-brand-orangewhite">Follow Us On:</h1>
               <div className="flex gap-4 justify-center items-center my-2">
-              <li><Image src={FB} height={25} alt="social"></Image></li>
+              <li><Image src={FB} height={25} alt="social" ></Image></li>
               <li><Image src={IG} height={25} alt="social"></Image></li>
               <li><Image src={X} height={25} alt="social"></Image></li>
               </div>

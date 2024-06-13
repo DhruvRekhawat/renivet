@@ -10,7 +10,7 @@
       src: url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
     }
     :root {
-      --brand-darkgreen: 60 7% 35%;
+      --brand-darkgreen: 111 100% 4%;
       --brand-lightgreen: 74 22% 62%;
       --brand-offwhite: 52 94% 94%;
       --brand-orangewhite: 43 81% 88%;
@@ -49,7 +49,7 @@
 
     .dark {
 
-      --brand-darkgreen: 60 7% 35%;
+      --brand-darkgreen: 111 100% 4%;
       --brand-lightgreen: 74 22% 62%;
       --brand-offwhite: 52 94% 94%;
       --brand-orangewhite: 43 81% 88%;
