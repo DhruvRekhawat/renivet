@@ -65,7 +65,7 @@ const BlogCarousel = async() => {
                   <Card className="rounded-md w-[460px] bg-zinc-100 h-full ">
 
                       <div className="h-[250px] w-full p-1">
-                    <img src={urlFor(blog.mainImage).url()} alt='main image' className=" h-full w-full rounded-sm"></img>
+                    <Image src={urlFor(blog.mainImage).url()}  width={300} height={300} alt='main image' className=" h-full w-full rounded-sm"></Image>
                     </div>
                     <CardContent className="px-4 flex flex-col justify-between gap-2">
                     <span className="text-lg">{blog.title}</span>
