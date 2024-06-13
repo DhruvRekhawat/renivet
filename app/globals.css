@@ -99,32 +99,22 @@
     scroll-behavior: smooth;
  
   }
-  .bg-clothes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../assests/karina.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: left;
+  .animate-fadeinup-1{
+    animation:fadeinup 0.5s ease-out 50ms forwards;
   }
-  .bg-clothesrack{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../assests/clothes.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: left;
+  .animate-fadeinup-2{
+    animation:fadeinup 0.7s ease-out 50ms forwards;
   }
-  .bg-clouds{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../assests/clouds.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: left;
+  .animate-fadeinup-3{
+    animation:fadeinup 1s ease-out 50ms forwards;
   }
-  .bg-treegirl{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assests/alex-muromtsev-3YvFGeUnKYw-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: left;
+  @keyframes fadeinup{
+    0%{
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 100;
+    }
   }
-

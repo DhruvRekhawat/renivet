@@ -17,9 +17,9 @@ const Hero = () => {
     <div
     
     className="flex flex-col items-center justify-start">  
-    <h1  className="text-2xl md:text-4xl md:w-2/3 text-white px-2 md:px-8 text-center font-bold">RENIVET<br /><span className="text-white">SEE THE DIFFERENCE : MAKE THE DIFFERENCE</span></h1>
-    <p  className="text-brand-offwhite text-md px-2 md:px-8 py-4 text-center">We are revolutionizing the way you shop for Fashion & Accessories </p>
-    <Link href='#subscribe'><Button className="bg-black text-white hover:text-brand-offwhite"> Step up and Subscribe</Button></Link>
+    <h1  className="text-2xl md:text-4xl md:w-2/3 text-white px-2 md:px-8 text-center font-bold animate-fadeinup-1">RENIVET<br /><span className="text-white">SEE THE DIFFERENCE : MAKE THE DIFFERENCE</span></h1>
+    <p  className="text-brand-offwhite text-md px-2 md:px-8 py-4 text-center animate-fadeinup-2">We are revolutionizing the way you shop for Fashion & Accessories </p>
+    <Link href='#subscribe'><Button className="bg-black text-white hover:text-brand-offwhite animate-fadeinup-3"> Step up and Subscribe</Button></Link>
     </div> 
       </section>
   )
