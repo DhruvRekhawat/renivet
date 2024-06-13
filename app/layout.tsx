@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import Navbar from "@/components/molecules/navbar";
 import Head from "next/head";
@@ -55,9 +56,8 @@ export default function RootLayout({
             </ul>
             <p className="md:col-span-3 text-brand-offwhite">&copy; Renivet Private Limited</p>
           </div>
-          
-          
         </footer>
+        <SpeedInsights></SpeedInsights>
       </body>
     </html>
   );
