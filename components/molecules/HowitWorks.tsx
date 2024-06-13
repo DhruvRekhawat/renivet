@@ -9,7 +9,7 @@ import Icon3 from "@/assests/icons/ethical.png"
 const HowitWorks = () => {
   return (
     <section className="flex flex-col space-y-10" id="howitworks">
-    <h1 className="text-center text-4xl mt-40">What to Expect</h1>
+    <h1 className="text-center text-4xl mt-16">What to Expect</h1>
     <p className=" text-center mx-auto md:w-2/3 px-2 ">We team up with forward-thinking brands to bring you an unparalleled journey of each product, from inception to your wardrobe. Our unique approach ensures that you&apos;re not just buying a product, but also investing in its journey, values, and impact on our planet.</p>
     <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 place-items-center gap-4 my-6">
       <Card className="w-full animate-fadeinup-1">
