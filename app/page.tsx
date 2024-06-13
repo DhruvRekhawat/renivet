@@ -2,7 +2,7 @@
 import { Allura} from "next/font/google";
 import Image from "next/image";
 import Image1 from"@/assests/karina.webp"
-import Image2 from"@/assests/clothes.jpg"
+import Image2 from"@/assests/clouds.webp"
 import Image3 from"@/assests/yellowapple.jpg"
 import Image4 from"@/assests/jasmin-chew-JeKQiy307rA-unsplash.jpg"
 import Image5 from"@/assests/whitewalk.jpg"
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="h-full w-full -z-10 absolute md:top-20 top-0">
       <Image src={Image1} layout="fill"
       objectFit="cover"        
-    quality={100} alt="coverImage" className="brightness-75"></Image>
+    quality={100} loading="eager" placeholder="blur" alt="coverImage" className="brightness-75"></Image>
     </div>
     <motion.div
     initial="hidden"
@@ -84,22 +84,25 @@ export default function Home() {
           <h3><Link href="/blogs"><u>View all</u></Link></h3>
           <BlogCarousel></BlogCarousel>
         </section>
-        <motion.section 
-        initial="hidden"
+    <motion.section 
+    initial="hidden"
     animate="show"
     viewport={{ once: true }}
     variants={{
       hidden: {},
       show: {
         transition: {
-          staggerChildren: 0.15,
+          staggerChildren: 0.3,
         },
       },
     }}
-    className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center my-8" id="subscribe">
-          <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-2xl text-white font-bold p-4">From awareness to action. Join our <div className="md:text-8xl text-4xl"><span className={allura.className}>Community</span></div></motion.h1>
-          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md  text-center text-wrap md:w-2/3 mx-auto -translate-x-6">At Renivet, we&apos;re more than a marketplace—we&apos;re a community of individuals who appreciate thoughtful fashion and value transparency. Join us to connect with like-minded enthusiasts, share your experiences, and discover brands that align with your values. Together, we celebrate fashion that tells a story and supports meaningful choices. Join our community today and be part of a movement that values your unique perspective</motion.p>
-          <Card className="text-white my-6 p-6 h-full md:w-1/2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border-transparent  ">
+    className="h-fit w-full flex flex-col p-4 md:p-6 justify-center items-center my-8 relative z-0" id="subscribe">
+      <div className="h-full w-full absolute -z-10">
+          <Image src={Image2} fill sizes="108vw" placeholder="blur" objectFit="cover" alt="clouds"  className="h-full w-full"></Image>
+          </div>
+          <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-2xl text-white font-bold p-4 relative z-10">From awareness to action. Join our <div className="md:text-8xl text-4xl"><span className={allura.className}>Community</span></div></motion.h1>
+          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md  text-center text-wrap md:w-2/3 mx-auto -translate-x-6 relative z-10">At Renivet, we&apos;re more than a marketplace—we&apos;re a community of individuals who appreciate thoughtful fashion and value transparency. Join us to connect with like-minded enthusiasts, share your experiences, and discover brands that align with your values. Together, we celebrate fashion that tells a story and supports meaningful choices. Join our community today and be part of a movement that values your unique perspective</motion.p>
+          <Card className="text-white my-6 p-6 h-full w-full md:w-1/2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-transparent  ">
             <CardTitle className="text-md my-2">Subscribe To Our Newsletter</CardTitle>
             <Subscribe></Subscribe>
           </Card>
