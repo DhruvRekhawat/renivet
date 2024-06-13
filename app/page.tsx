@@ -19,7 +19,7 @@ export default function Home() {
           <BlogCarousel></BlogCarousel>
         </section>
 
-        {/* <JointheCommunity></JointheCommunity> */}
+        <JointheCommunity></JointheCommunity>
         <section className="my-8" id="contact">
           <h1 className="text-4xl  text-center my-2">Contact Us</h1>
           <p className="text-center mx-auto my-2 w-2/3">Whether you&apos;re a conscious consumer with questions about our products or a brand interested in collaborating on sustainable fashion, we&apos;d love to connect. Your feedback, ideas, and inquiries are invaluable to us, and we&apos;re committed to fostering meaningful relationships. Contact us today and let&apos;s start a conversation. Together, we can create a more sustainable future for fashion.</p>
