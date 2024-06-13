@@ -61,8 +61,8 @@ const BlogCarousel = async() => {
           <CarouselContent className="">
             {blogData.map((blog, index) => (
               <CarouselItem key={index} className="md:basis-1/3 w-2/3">
-                <div className="p-4 flex flex-wrap">
-                  <Card className="rounded-md w-[460px] bg-zinc-100 ">
+                <div className="p-4 flex flex-wrap h-full">
+                  <Card className="rounded-md w-[460px] bg-zinc-100 h-full ">
 
                       <div className="h-[250px] w-full p-1">
                     <img src={urlFor(blog.mainImage).url()} alt='main image' className=" h-full w-full rounded-sm"></img>

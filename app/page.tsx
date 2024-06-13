@@ -47,26 +47,31 @@ export default function Home() {
       },
     }}
     className="flex flex-col items-center justify-start">  
-    <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-2xl md:text-4xl md:w-2/3 text-brand-offwhite px-2 md:px-8 text-center font-bold">Welcome to Renivet,<br /><span className="text-white">where sustainable fashion meets transparency and empowerment</span></motion.h1>
-    <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-brand-offwhite text-md px-2 md:px-8 py-4 text-center">Launching Soon: A Marketplace Like No Other</motion.p>
-    <Link href='#subscribe'><Button className="bg-black text-white hover:text-brand-offwhite mb-16"> Subscribe for updates</Button></Link>
+    <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-2xl md:text-4xl md:w-2/3 text-white px-2 md:px-8 text-center font-bold">RENIVET<br /><span className="text-white">SEE THE DIFFERENCE : MAKE THE DIFFERENCE</span></motion.h1>
+    <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-brand-offwhite text-md px-2 md:px-8 py-4 text-center">We are revolutionizing the way you shop for Fashion & Accessories </motion.p>
+    <Link href='#subscribe'><Button className="bg-black text-white hover:text-brand-offwhite mb-16"> Step up and Subscribe</Button></Link>
 
     </motion.div> 
       </section>
 
       <section className="flex flex-col space-y-4" id="howitworks">
         <h1 className="text-center text-4xl  mt-16">What to Expect</h1>
-        <p className=" text-center mx-auto md:w-2/3 px-2 ">Renivet&apos;s mission is to empower brands and shoppers who care about reducing fashion&apos;s environmental impact. We carefully vet every brand partner for robust sustainability practices, so you can discover and shop environmentally-conscious fashion with confidence.</p>
+        <p className=" text-center mx-auto md:w-2/3 px-2 ">We team up with forward-thinking brands to bring you an unparalleled journey of each product, from inception to your wardrobe. Our unique approach ensures that you&apos;re not just buying a product, but also investing in its journey, values, and impact on our planet.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 place-items-center gap-4 my-6">
-          <Card className="">
-            <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon2} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">Eco-Friendly Materials</CardTitle>
-            <CardContent className="">Brands using organic, recycled and innovative plant-based fabrics to create sustainable products</CardContent></CardHeader>
+          <Card className="w-full">
+            <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon2} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">TRACE EVERY MATERIAL</CardTitle>
+            <CardContent className="">Know the story behind every piece you wear.
+            </CardContent></CardHeader>
           </Card>
-          <Card className="">
-            <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon3} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">Ethical & Fair Labor</CardTitle><CardContent className="">Safe conditions and protected rights for all workers through ethical manufacturing practices</CardContent></CardHeader>
+          <Card className="w-full">
+            <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon3} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">YOUR PURCHASE MATTERS</CardTitle><CardContent className="">
+            So go beyond the tag
+            </CardContent></CardHeader>
           </Card>
-          <Card className="">
-            <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon1} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">Carbon-Conscious</CardTitle><CardContent className="">Initiatives to measure, reduce and offset carbon emissions and water usage across operations</CardContent></CardHeader>
+          <Card className="w-full">
+            <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon1} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">CELEBRATE VALUES <br className="md:flex hidden"></br> <br /></CardTitle><CardContent className="">
+            Wear what you value
+              </CardContent></CardHeader>
           </Card>
         </div>
       </section>
@@ -88,8 +93,8 @@ export default function Home() {
       },
     }}
     className="bg-clouds w-full flex flex-col p-2 md:p-6 justify-center items-center my-8" id="subscribe">
-          <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-2xl text-white font-bold p-4">Join the <div className="md:text-8xl text-4xl md:-translate-y-8"><span className={allura.className}>Community</span></div></motion.h1>
-          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md  text-center text-wrap md:w-2/3 mx-auto">Fashion has the power to drive positive change. By subscribing, you&apos;re taking the first step towards a more sustainable future for our planet and the apparel industry</motion.p>
+          <motion.h1 variants={FADE_UP_ANIMATION_VARIANTS} className="text-center text-wrap text-2xl text-white font-bold p-4">From awareness to action. Join our <div className="md:text-8xl text-4xl"><span className={allura.className}>Community</span></div></motion.h1>
+          <motion.p variants={FADE_UP_ANIMATION_VARIANTS} className="text-white text-bold text-md  text-center text-wrap md:w-2/3 mx-auto -translate-x-6">At Renivet, we&apos;re more than a marketplace—we're a community of individuals who appreciate thoughtful fashion and value transparency. Join us to connect with like-minded enthusiasts, share your experiences, and discover brands that align with your values. Together, we celebrate fashion that tells a story and supports meaningful choices. Join our community today and be part of a movement that values your unique perspective</motion.p>
           <Card className="text-white my-6 p-6 h-full md:w-1/2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border-transparent  ">
             <CardTitle className="text-md my-2">Subscribe To Our Newsletter</CardTitle>
             <Subscribe></Subscribe>
@@ -99,8 +104,11 @@ export default function Home() {
 
         <section className="my-8" id="contact">
           <h1 className="text-4xl  text-center my-2">Contact Us</h1>
-          <p className="text-brand-orange text-center mx-auto my-2">Have questions? We&apos;d love to hear from you. Reach out!</p>
-          
+          <p className="text-center mx-auto my-2 w-2/3">Whether you&apos;re a conscious consumer with questions about our products or a brand interested in collaborating on sustainable fashion, we&apos;d love to connect. Your feedback, ideas, and inquiries are invaluable to us, and we&apos;re committed to fostering meaningful relationships. Contact us today and let&apos;s start a conversation. Together, we can create a more sustainable future for fashion.</p>
+          <div className="w-full flex flex-wrap">
+            <Card>Concious Consumer</Card>
+            <Card>Brand Collaboration</Card>
+          </div>
         </section>
         <footer className="bg-black w-full px-8 py-4 flex flex-col md:flex-row justify-center items-center text-white">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-24">

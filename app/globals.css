@@ -99,14 +99,14 @@
     scroll-behavior: smooth;
   }
   .bg-clothes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../assests/rafael-alcure-Fzip3zb-h9k-unsplash.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../assests/karina.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-position: left;
   }
   .bg-clothesrack{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assests/clothes.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../assests/clothes.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
