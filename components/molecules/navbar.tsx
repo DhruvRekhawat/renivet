@@ -16,7 +16,7 @@ const Navbar = () => {
       
         
         <Image src={Logo} alt="logo" height={40} className=" justify-self-start"></Image>
-        <Image src={Logo2} alt="logo" height={20} className=" hidden md:flex"></Image>
+        <Image src={Logo2} alt="logo" height={20} className=" "></Image>
         <ul className="gap-4 text-md font-bold hover:cursor-pointer justify-self-end hidden md:flex  " >
             <Link href='#howitworks' className = "hover:-translate-y-0.5 transition-all"><li>How it Works</li></Link>
             <Link href='#subscribe' className = "hover:-translate-y-0.5 transition-all"><li>Subscribe</li></Link>
