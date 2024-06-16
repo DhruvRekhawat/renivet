@@ -43,20 +43,7 @@ export default function Subscribe() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              
-              <FormControl>
-                <Input placeholder="What's your name?" {...field} className=" ring-transparent " />
-              </FormControl>
-              
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        
         <FormField
           control={form.control}
           name="email"
