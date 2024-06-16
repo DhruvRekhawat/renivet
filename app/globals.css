@@ -108,6 +108,9 @@
   .animate-fadeinup-3{
     animation:fadeinup 1s ease-out 50ms forwards;
   }
+  .animate-navbar{
+    animation: topDown 0.3s ease 1 forwards;
+  }
   @keyframes fadeinup{
     0%{
       transform: translateY(50px);
@@ -116,5 +119,14 @@
     100%{
       transform: translateY(0px);
       opacity: 100;
+    }
+  }
+
+  @keyframes topDown{
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(0%);
     }
   }
