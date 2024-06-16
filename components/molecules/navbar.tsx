@@ -16,10 +16,10 @@ const Navbar = () => {
         
         <Image src={Logo} alt="logo" height={40} className=" justify-self-start"></Image>
         <Image src={Logo2} alt="logo" height={20} className=""></Image>
-        <ul className="flex gap-4 text-md font-bold hover:cursor-pointer justify-self-end">
-            <Link href='#howitworks'><li>How it Works</li></Link>
-            <Link href='#subscribe'><li>Subscribe</li></Link>
-            <Link href='#contact'><li>Contact</li></Link>
+        <ul className="flex gap-4 text-md font-bold hover:cursor-pointer justify-self-end  " >
+            <Link href='#howitworks' className = "hover:-translate-y-0.5 transition-all"><li>How it Works</li></Link>
+            <Link href='#subscribe' className = "hover:-translate-y-0.5 transition-all"><li>Subscribe</li></Link>
+            <Link href='#contact' className = "hover:-translate-y-0.5 transition-all"><li>Contact</li></Link>
         </ul>
 
     </nav>
