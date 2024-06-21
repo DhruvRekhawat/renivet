@@ -23,7 +23,7 @@ const HowitWorks = () => {
         </CardContent></CardHeader>
       </Card>
       <Card className="w-full animate-fadeinup-3 h-full">
-        <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon1} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">CELEBRATE VALUES <br className="md:flex hidden"></br> <br /></CardTitle><CardContent className="">
+        <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon1} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">CELEBRATE VALUES</CardTitle><CardContent className="">
         Wear what you value
           </CardContent></CardHeader>
       </Card>
