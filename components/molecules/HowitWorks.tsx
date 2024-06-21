@@ -14,7 +14,7 @@ const HowitWorks = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 place-items-center gap-4 my-6">
       <Card className="w-full animate-fadeinup-1 h-full">
         <CardHeader className="flex justify-center items-center gap-6"><Image src={Icon2} height={30} width={30} alt="icon"></Image><CardTitle className="text-center">TRACE EVERY MATERIAL</CardTitle>
-        <CardContent className="">Know the story behind every piece you wear.
+        <CardContent className="text-center">Know the story behind every piece you wear.
         </CardContent></CardHeader>
       </Card>
       <Card className="w-full animate-fadeinup-2 h-full">
