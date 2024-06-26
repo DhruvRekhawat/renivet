@@ -10,11 +10,11 @@
       src: url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
     }
     :root {
-      --brand-darkgreen: 111 100% 4%;
+      --brand-darkgreen: 66, 15%, 36%;
       --brand-lightgreen: 74 22% 62%;
-      --brand-offwhite: 52 94% 94%;
+      --brand-offwhite: 50, 43%, 89%;
       --brand-orangewhite: 43 81% 88%;
-      --brand-orange:  	26 73% 45%;
+      --brand-orange:  	40, 40%, 64%;
       --brand-brown:  	23 66% 28%;
       --background: 0 0% 100%;
       --foreground: 240 10% 3.9%;
@@ -98,6 +98,9 @@
   html{
     scroll-behavior: smooth;
  
+  }
+  body{
+    background: var(--brand-offwhite);
   }
   .animate-fadeinup-1{
     animation:fadeinup 0.5s ease-out 50ms forwards;

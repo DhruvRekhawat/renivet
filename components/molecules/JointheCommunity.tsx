@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Subscribe from './subscribeform'
 import { Card, CardTitle } from '@/components/ui/card'
-import Image2 from"@/assests/clouds.webp"
+import Image2 from"@/assests/community.webp"
 import { Allura } from 'next/font/google'
 const allura = Allura({subsets:["latin"],weight:["400"]})
 
@@ -10,7 +10,7 @@ const JointheCommunity = () => {
    
   return (
     <section
-    className="h-fit w-full flex flex-col p-4 md:p-6 justify-center items-center my-8 relative z-0" id="subscribe">
+    className="h-fit w-full flex flex-col p-4 md:p-6 justify-center items-center  relative z-0" id="subscribe">
      <div className="h-full w-full absolute -z-10">
          <Image src={Image2} fill sizes="108vw" placeholder="blur" objectFit="cover" alt="clouds"  className="h-full w-full"></Image>
          </div>

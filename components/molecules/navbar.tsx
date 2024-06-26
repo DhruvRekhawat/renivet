@@ -11,8 +11,8 @@ const Navbar = () => {
   const [isOpen,setIsOpen] = useState(false)
   return (
     <>
-    <div className="bg-black text-white text-sm flex h-8 justify-center items-center w-full p-2">We Are Coming Soon <Heart className="text-white h-4"></Heart> </div>
-    <nav className=" grid h-14 w-full grid-cols-3 px-4 bg-white place-items-center">
+    <div className="bg-brand-darkgreen text-white text-sm flex h-8 justify-center items-center w-full p-2">We Are Coming Soon <Heart className="text-white h-4"></Heart> </div>
+    <nav className=" grid h-14 w-full grid-cols-3 px-4 bg-brand-offwhite  place-items-center">
       
         
         <Image src={Logo} alt="logo" height={40} className=" justify-self-start"></Image>

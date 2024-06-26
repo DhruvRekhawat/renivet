@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Image1 from"@/assests/karina.webp"
+import Image1 from"@/assests/hero.webp"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 const Hero = () => {
@@ -8,8 +8,8 @@ const Hero = () => {
     //     show: { opacity: 1, y: 0, transition: { type: "spring" } }, 
     //   }
   return (
-    <section className="grid grid-cols-1  h-[75vh] md:h-screen w-full place-items-center bg-transparent"> 
-      <div className="h-full w-full -z-10 absolute md:top-20 top-0">
+    <section className="grid grid-cols-1 h-[75vh] md:h-screen w-full place-items-center bg-transparent"> 
+      <div className="h-full w-full -z-10 absolute md:top-[5.5rem]  top-0">
       <Image src={Image1} layout="fill"
       objectFit="cover"        
     quality={100} loading="eager" placeholder="blur" alt="coverImage" className="brightness-75"></Image>

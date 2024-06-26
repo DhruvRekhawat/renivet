@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Merriweather } from "next/font/google";
+import { Merriweather,Forum } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import Navbar from "@/components/molecules/navbar";
@@ -9,6 +9,8 @@ import FB from "@/assests/icons/facebook.png"
 import IG from "@/assests/icons/instagram.png"
 import X from  "@/assests/icons/twitter.png"
 
+
+const forum = Forum({subsets:['latin'],weight:['400']})
 const merriweather = Merriweather({subsets:["latin"],weight:['300','400','700']})
 export const metadata: Metadata = {
   title: "Renivet",
@@ -26,7 +28,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/icon.jpg" type="image/x-icon" />
       </Head>
-      <body className={merriweather.className}>
+      <body className={forum.className}>
       <Navbar></Navbar>
       {children}
       <footer className="bg-brand-darkgreen w-full px-8 py-4 flex flex-col md:flex-row justify-center items-center text-white">

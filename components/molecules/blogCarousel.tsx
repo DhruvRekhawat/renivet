@@ -42,7 +42,7 @@ async function getData() {
         mainImage,
       }`,
      );
-    console.log(data)
+    console.log(data.length)
     return data
   }
   
@@ -56,19 +56,19 @@ const BlogCarousel = async() => {
           opts={{
             align: "center",
           }}
-          className=" flex justify-start items-center"
+          className=" flex justify-start items-center hover:cursor-grab active:cursor-grabbing"
         >
-          <CarouselContent className="">
+          <CarouselContent className="flex gap-0">
             {blogData.map((blog, index) => (
-              <CarouselItem key={index} className="md:basis-1/3 w-2/3">
+              <CarouselItem key={index} className="lg:basis-1/4 md:basis-1/3 w-3/4">
                 <div className="p-4 flex flex-wrap h-full">
-                  <Card className="rounded-md w-[460px] bg-zinc-100 h-full ">
+                  <Card className="rounded-md w-[460px] bg-white h-full ">
 
                       <div className="h-[250px] w-full p-1">
                     <Image src={urlFor(blog.mainImage).url()}  width={300} height={300} alt='main image' className=" h-full w-full rounded-sm"></Image>
                     </div>
                     <CardContent className="px-4 flex flex-col justify-between gap-2">
-                    <span className="text-lg">{blog.title}</span>
+                    <span className="text-lg text-brand-brown">{blog.title}</span>
                     <span className="font-semibold text-xs">Test Author</span>
                     <Link href={`/blog/${blog.slug.current}`} ><button className="bg-white hover:bg-zinc-900 hover:text-white transition-all rounded-lg text-xs border-none p-2 w-fit">{blog.time} read </button></Link>
                     </CardContent>
