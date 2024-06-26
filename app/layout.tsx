@@ -56,7 +56,7 @@ export default function RootLayout({
               </div>
                            
             </ul>
-            <p className="md:col-span-3 text-brand-offwhite">&copy; Renivet Private Limited</p>
+            <p className="md:col-span-3 text-brand-offwhite">&copy; Renivet Solutions Private Limited</p>
           </div>
         </footer>
         <SpeedInsights></SpeedInsights>
