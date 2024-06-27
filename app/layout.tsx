@@ -31,8 +31,8 @@ export default function RootLayout({
       <body className={forum.className}>
       <Navbar></Navbar>
       {children}
-      <footer className="bg-brand-darkgreen w-full px-8 py-4 flex flex-col md:flex-row justify-start items-center text-white">
-          <div className="grid grid-cols-2 md:grid-cols-3 md:gap-24 gap-6 w-full">
+      <footer className="bg-brand-darkgreen w-full px-8 py-4 flex flex-col md:flex-row justify-center items-center text-white">
+          <div className="grid grid-cols-2 md:grid-cols-3 md:gap-24 gap-6 w-full md:w-2/3 ">
             <ul className="text-brand-offwhite">
               <h1 className="text-lg text-brand-orangewhite">Important Links</h1>
               <li>About</li>

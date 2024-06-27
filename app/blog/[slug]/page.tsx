@@ -26,14 +26,12 @@ async function getBlogData(slug:string){
               publishedAt
           }`,
        );
-      console.log(data)
       return data
 }
 
 const BlogPage = async ({params}:{params:{slug:string}}) => {
 
-    const slug = params.slug;
-    console.log('hello')
+    const slug = params.slug;``
     const post = await getBlogData(slug)
 
   return (
