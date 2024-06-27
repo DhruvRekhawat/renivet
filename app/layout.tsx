@@ -52,9 +52,9 @@ export default function RootLayout({
             </ul>
             <ul className="text-brand-offwhite">
               <h1 className="text-lg text-brand-orangewhite">Contact Us</h1>
-              <li>Phone</li>
-              <li>Email</li>
-              <li>Address</li>
+
+              <li>services@renivet.com</li>
+
             </ul>
             
             <p className="md:col-span-3 col-span-2 text-brand-offwhite">&copy; Renivet Solutions Pvt. Ltd.</p>
