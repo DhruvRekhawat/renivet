@@ -3,16 +3,18 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-
+import {toast, Toaster} from 'react-hot-toast'
 import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { useState } from "react"
 
 const formSchema = z.object({
   email: z.string().email().min(2, {
@@ -23,6 +25,9 @@ const formSchema = z.object({
 })
 
 export default function Subscribe() {
+
+   const [visible,setVisible] = useState(false)
+   const success = () => toast.success('Form Submitted!')
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -38,7 +43,7 @@ export default function Subscribe() {
           headers:{
             "email": values.email
           }
-        }).then(()=>console.log('submitted')).catch(()=>console.log('error'))
+        }).then(()=>{success(); setVisible(true)}).catch(()=>console.log('error'))
       }
 
   return (
@@ -54,13 +59,19 @@ export default function Subscribe() {
               <FormControl>
                 <Input placeholder="Enter Your Email to Join Our Newsletter!" {...field} />
               </FormControl>
-              
+              { 
+              visible?
+              <FormDescription className="text-white">Subscribed Successfully!</FormDescription>:
+              <FormDescription></FormDescription>
+          }
               <FormMessage />
             </FormItem>
           )}
         />
         <Button type="submit" className="bg-black text-brand-offwhite w-full">Submit</Button>
+        <Toaster></Toaster>
       </form>
+
     </Form>
   )
 }
