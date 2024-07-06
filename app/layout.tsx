@@ -53,7 +53,7 @@ export default function RootLayout({
             <ul className="text-brand-offwhite">
               <h1 className="text-lg text-brand-orangewhite">Contact Us</h1>
 
-              <li>services@renivet.com</li>
+              <li>support@renivet.com</li>
 
             </ul>
             
