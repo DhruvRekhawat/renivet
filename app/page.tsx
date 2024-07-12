@@ -13,11 +13,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center">
        <Hero></Hero> 
         <HowitWorks></HowitWorks>
-        <section className="flex flex-col space-y-4 w-full md:p-8 p-2 bg-brand-offwhite">
-          <h1 className="text-start text-4xl  mt-16">Latest Stories</h1>
-          <h3><Link href="/blogs"><u>View all</u></Link></h3>
-          <BlogCarousel></BlogCarousel>
-        </section>
+
 
         <JointheCommunity></JointheCommunity>
         <section className=" bg-brand-offwhite py-8" id="contact" >
@@ -27,6 +23,11 @@ export default function Home() {
             <Button>Concious Consumer</Button>
             <Button>Brand Collaboration</Button>
           </div>
+        </section>
+        <section className="flex flex-col space-y-4 w-full md:p-8 p-2 bg-brand-offwhite">
+          <h1 className="text-start text-4xl  mt-16">Latest Stories</h1>
+          {/* <h3><Link href="/blogs"><u>View all</u></Link></h3> */}
+          <BlogCarousel></BlogCarousel>
         </section>
         
     </main>
